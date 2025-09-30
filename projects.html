@@ -6,6 +6,9 @@
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
         </div>
+
+        <!-- fancy auto-reload -->
+        <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
     </head>
     <body>
         <p><strong>Rubik's Cube Solver V1:</strong> (written in C++, finds inefficient solutions quickly)</p>
@@ -27,9 +30,11 @@
             in single-threaded prime number generation, at least on the two machines I've 
             tested it on.  (I haven't made the repo public yet.)
         </p>
-        <img src="cube.png" alt="Picture of a Rubik's Cube">
 
-        <canvas id="canvas"></canvas>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+
         <script src="run_animation.js"></script>
     </body>
 </html>
