@@ -8,11 +8,15 @@ ctx.fillRect(0, 0, canvas.width, canvas.height)
 
 setInterval(a_callback, 500)
 
-let i = 0;
+let cube_x = 0;
 
 function a_callback() {
-    i += 1;
-    console.log("hola", i)
+    img_elem = document.getElementById("cube_img");
+    // console.log(img_elem);
+
+    cube_x += 10;
+    img_elem.style.left = cube_x + "px";
+    console.log("hola", cube_x)
 }
 
 // animate_cube();
