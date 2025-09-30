@@ -2,3 +2,8 @@ img {
     position: relative;
     width: 50%
 }
+
+body {
+    background-color: #111;
+    color: #FFF
+}
