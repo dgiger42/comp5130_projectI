@@ -8,8 +8,11 @@ ctx.fillRect(0, 0, canvas.width, canvas.height)
 
 setInterval(a_callback, 500)
 
+let i = 0;
+
 function a_callback() {
-    console.log("hola")
+    i += 1;
+    console.log("hola", i)
 }
 
 // animate_cube();
