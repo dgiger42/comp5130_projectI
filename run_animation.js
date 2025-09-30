@@ -7,6 +7,9 @@ function animate_cube(cube_id) {
     // console.log(img_elem);
 
     style = img_elem.style;
+    if (cube_id == "cube1") {
+        console.log(style.left)
+    }
 
     cube_x = parseInt(style.left.slice(0, -2))
     cube_y = parseInt(style.top.slice(0, -2))
