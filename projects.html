@@ -11,28 +11,34 @@
         <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
     </head>
     <body>
-        <p><strong>Rubik's Cube Solver V1:</strong> (written in C++, finds inefficient solutions quickly)</p>
-        <p>
-            <strong>Cube Solver V2:</strong> (written in Rust, finds optimal solutions, 
-            requires more time & uses more advanced data structures such as multi-layer 
-            Bloom filters designed to be safely modified in parallel using atomic operations.  Finding 
-            <em>optimal</em> solutions is <em>much</em> more computationally intensive than finding inefficient solutions)
-        </p>
-        <p><strong>Cube Solver V3</strong> (complete rewrite in Python, uses a neural network + beam search to 
-            find near-optimal solutions faster than the V2 version)
-        </p>
-        <p><strong>Prime Sieve Project:</strong> (not cube themed for a change).  A highly optimized hybrid 
-            approach for finding prime numbers up to N.  Combines two prime number generation techniques
-            to achieve O(n) time while avoiding the poor constant factors typically
-            associated with O(n) prime number generation techniques.  Often outperforms 
-            <a href="https://github.com/kimwalisch/primesieve" >primesieve</a> 
-            (which is reputed to be the fastest prime number generation program) 
-            in single-threaded prime number generation, at least on the two machines I've 
-            tested it on.  (I haven't made the repo public yet.)
-        </p>
-
         <div>
-            <img src="cube.png" alt="Picture of a Rubik's Cube" id="cube_img" style="position:relative">
+
+            <div style="width:50%; float: left;">
+                <p><strong>Rubik's Cube Solver V1:</strong> (written in C++, finds inefficient solutions quickly)</p>
+                <p>
+                    <strong>Cube Solver V2:</strong> (written in Rust, finds optimal solutions, 
+                    requires more time & uses more advanced data structures such as multi-layer 
+                    Bloom filters designed to be safely modified in parallel using atomic operations.  Finding 
+                    <em>optimal</em> solutions is <em>much</em> more computationally intensive than finding inefficient solutions)
+                </p>
+                <p><strong>Cube Solver V3</strong> (complete rewrite in Python, uses a neural network + beam search to 
+                    find near-optimal solutions faster than the V2 version)
+                </p>
+                <p><strong>Prime Sieve Project:</strong> (not cube themed for a change).  A highly optimized hybrid 
+                    approach for finding prime numbers up to N.  Combines two prime number generation techniques
+                    to achieve O(n) time while avoiding the poor constant factors typically
+                    associated with O(n) prime number generation techniques.  Often outperforms 
+                    <a href="https://github.com/kimwalisch/primesieve" >primesieve</a> 
+                    (which is reputed to be the fastest prime number generation program) 
+                    in single-threaded prime number generation, at least on the two machines I've 
+                    tested it on.  (I haven't made the repo public yet.)
+                </p>
+            </div>
+
+            <div style="float: left;">
+                <img src="cube.png" alt="Picture of a Rubik's Cube" 
+                    id="cube_img" style="position:relative" width="150">
+            </div>
         </div>
 
         <script src="run_animation.js"></script>
