@@ -6,7 +6,7 @@ ctx.fillStyle = "#66F"
 ctx.fillRect(0, 0, canvas.width, canvas.height)
 
 
-setInterval(a_callback, 500)
+setInterval(a_callback, 25)
 
 let cube_x = 0;
 
@@ -14,9 +14,9 @@ function a_callback() {
     img_elem = document.getElementById("cube_img");
     // console.log(img_elem);
 
-    cube_x += 10;
+    cube_x += 1;
+    cube_x %= 200
     img_elem.style.left = cube_x + "px";
-    console.log("hola", cube_x)
 }
 
 // animate_cube();
