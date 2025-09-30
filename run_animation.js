@@ -1,9 +1,9 @@
 
+setInterval(animate_cube, 25, "cube1")
+setInterval(animate_cube, 25, "cube2")
 
-setInterval(animate_cube, 25)
-
-function animate_cube() {
-    img_elem = document.getElementById("cube_img");
+function animate_cube(cube_id) {
+    img_elem = document.getElementById(cube_id);
     // console.log(img_elem);
 
     style = img_elem.style;
