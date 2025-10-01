@@ -12,7 +12,7 @@ function animate_cube(cube_id) {
     
     max_x_offset = parent_rect.width - img_rect.width;
     // max_y_offset = parent_rect.height - img_rect.height;
-    max_y_offset = 400;
+    max_y_offset = 600;
     console.log(parent_rect)
 
     // console.log(img_elem);
